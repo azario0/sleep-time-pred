@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Sleep Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Predict Sleep Time</h1>
+    <p>Enter your daily activities to predict your sleep time.</p>
+    <form method="POST" action="/predict">
+        <label for="WorkoutTime">Workout Time:</label><br>
+        <input type="number" id="WorkoutTime" name="WorkoutTime" step="0.01" required><br>
+        
+        <label for="ReadingTime">Reading Time:</label><br>
+        <input type="number" id="ReadingTime" name="ReadingTime" step="0.01" required><br>
+        
+        <label for="PhoneTime">Phone Time:</label><br>
+        <input type="number" id="PhoneTime" name="PhoneTime" step="0.01" required><br>
+        
+        <label for="WorkHours">Work Hours:</label><br>
+        <input type="number" id="WorkHours" name="WorkHours" step="0.01" required><br>
+        
+        <label for="CaffeineIntake">Caffeine Intake:</label><br>
+        <input type="number" id="CaffeineIntake" name="CaffeineIntake" step="0.01" required><br>
+        
+        <label for="RelaxationTime">Relaxation Time:</label><br>
+        <input type="number" id="RelaxationTime" name="RelaxationTime" step="0.01" required><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

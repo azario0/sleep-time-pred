@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>The predicted Sleep Time is: {{ prediction }}</p>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
